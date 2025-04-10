@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel and Tours</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/42262fe165.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="min-h-screen">
     <div
-      class="bg-[url('../images/Plane_Image.jpg')] bg-cover bg-center h-screen"
+      class="bg-[url('../images/Plane_Image.jpg')] bg-cover bg-center min-h-screen"
     >
       <div class="">
         <header class="p-3 text-bg-dark flex justify-between">
@@ -59,7 +63,122 @@
             </button>
           </div>
         </header>
+        <div class="absolute inset-x-0 top-25 flex items-center justify-center">
+          <h1 class="text-shadow-black text-4xl font-extrabold text-center">
+            Best deals are waiting for you
+          </h1>
+        </div>
+        <!--Sticky bottom Content box-->
+        <div class="absolute bottom-0 w-full flex justify-center">
+          <div
+            class="flex justify-end items-end gap-5 p-6 rounded-t-xl shadow-lg max-w-4xl w-full"
+          >
+            <!-- From dropdown -->
+            <details class="relative">
+              <summary
+                class="bg-white rounded-lg px-4 py-2 cursor-pointer shadow font-bold w-40"
+              >
+                From
+              </summary>
+              <ul class="absolute bg-white mt-2 rounded shadow w-full z-10">
+                <li class="hover:bg-gray-100 px-4 py-2 cursor-pointer">
+                  Kisumu City
+                </li>
+                <li class="hover:bg-gray-100 px-4 py-2 cursor-pointer">
+                  Mombasa
+                </li>
+                <li class="hover:bg-gray-100 px-4 py-2 cursor-pointer">
+                  Eldoret
+                </li>
+              </ul>
+            </details>
+
+            <!-- To dropdown -->
+            <details class="relative">
+              <summary
+                class="bg-white rounded-lg px-4 py-2 cursor-pointer shadow font-bold w-40"
+              >
+                To
+              </summary>
+              <ul class="absolute bg-white mt-2 rounded shadow w-full z-10">
+                <li class="hover:bg-gray-100 px-4 py-2 cursor-pointer">
+                  Nairobi
+                </li>
+                <li class="hover:bg-gray-100 px-4 py-2 cursor-pointer">
+                  Naivasha
+                </li>
+                <li class="hover:bg-gray-100 px-4 py-2 cursor-pointer">
+                  Thika
+                </li>
+              </ul>
+            </details>
+
+            <!-- Departure dropdown -->
+            <details class="relative">
+              <summary
+                class="bg-white rounded-lg px-4 py-2 cursor-pointer shadow font-bold w-40"
+              >
+                Departure
+              </summary>
+              <ul class="absolute bg-white mt-2 rounded shadow w-full z-10">
+                <li class="hover:bg-gray-100 px-4 py-2 cursor-pointer">
+                  13/06/2025
+                </li>
+                <li class="hover:bg-gray-100 px-4 py-2 cursor-pointer">
+                  14/06/2025
+                </li>
+                <li class="hover:bg-gray-100 px-4 py-2 cursor-pointer">
+                  15/06/2025
+                </li>
+              </ul>
+            </details>
+
+            <!-- Return dropdown -->
+            <details class="relative">
+              <summary
+                class="bg-white rounded-lg px-4 py-2 cursor-pointer shadow font-bold w-40"
+              >
+                Return
+              </summary>
+              <ul class="absolute bg-white mt-2 rounded shadow w-full z-10">
+                <li class="hover:bg-gray-100 px-4 py-2 cursor-pointer">
+                  15/06/2025
+                </li>
+                <li class="hover:bg-gray-100 px-4 py-2 cursor-pointer">
+                  16/06/2025
+                </li>
+                <li class="hover:bg-gray-100 px-4 py-2 cursor-pointer">
+                  17/06/2025
+                </li>
+              </ul>
+            </details>
+
+            <!-- Arrow Button -->
+            <button
+              class="bg-teal-600 hover:bg-teal-700 text-white p-4 rounded-lg transition duration-300"
+            >
+              →
+            </button>
+          </div>
+        </div>
       </div>
     </div>
+    <!--Footer and Copyrights-->
+    <footer>
+      <div class="mx-auto">
+        <div
+          class="flex flex-column md:flex-row justify-content-between align-items-center bg-blue-500"
+        >
+          <div class="mb-4 md:mb-0 space-x-4">
+            <p>&copy; 2025 SKY PLANE SAFARIS. All rights reserved</p>
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-blue-300">Privacy Policy </a>
+            <a href="#" class="hover:text-blue-300"> Terms of Service</a>
+            <a href="#" class="hover:text-blue-300"> Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
